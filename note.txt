@@ -8,3 +8,15 @@ thi ta su dung @Configuration de cho spring load truoc.
 ---@Bean--------Method level
 Dat ngay tren dau nhung phuong thuc cua class ma chung khai bao trong application config
 
+------How to use--------
+1. Khoi tao 1 class ApplicationConfig
+2. Goi: trong no trong class can su dung
+ApplicationContext context =
+                new AnnotationConfigApplicationContext(ApplicationConfig.class);
+
+3. Tao bean trong class application config
+
+  @Bean(name = "studentService")
+    public StudentService getStudentService(){
+        return new StudentServiceEmpl();
+    }
