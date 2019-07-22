@@ -16,6 +16,7 @@ public class StudentServiceEmpl implements StudentService{
     //Nen se su dung Spring bean
     private StudentRepository studentRepository = new StudentRepositoryEmpl();*/
 
+    @Autowired
     private StudentRepository studentRepository;
 
     //Cach su dung Setter Injection

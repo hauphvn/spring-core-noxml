@@ -20,3 +20,16 @@ ApplicationContext context =
     public StudentService getStudentService(){
         return new StudentServiceEmpl();
     }
+
+
+-------Bean Scopes---------
+Singleton:
+Trong mot IoC container chung ta chi tao ra duy nhat mot object cua class do.
+Moi lan su dung bean do thi no chi tao ra 1 object duy nhat
+La default scope.
+
+Prototype: nguoc lai voi singleton
+
+Request : lien quan de Web app
+Session
+Global Session: lien quan de Web app

@@ -15,6 +15,6 @@ public class TestRunMain {
         ApplicationContext context =
                 new AnnotationConfigApplicationContext(ApplicationConfig.class);
         StudentService studentService = context.getBean("studentService", StudentService.class);
-        studentService.getAll();
+        System.out.println(studentService.getAll());
     }
 }

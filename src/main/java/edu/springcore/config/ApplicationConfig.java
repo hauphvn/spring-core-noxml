@@ -12,11 +12,10 @@ public class ApplicationConfig {
 
     @Bean(name = "studentService")
     public StudentService getStudentService(){
-        StudentServiceEmpl studentServiceEmpl = new StudentServiceEmpl();
-        studentServiceEmpl.setStudentRepository(getStudentRepository());
-        return studentServiceEmpl;
+        return new StudentServiceEmpl();
     }
 
+    @Bean(name = "studentRepository")
     public StudentRepository getStudentRepository(){
         return new StudentRepositoryEmpl();
     }
