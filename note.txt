@@ -1,0 +1,10 @@
+----Annotation no xml pure java -------
+Khong can su dung context.xml
+Su dung Application Config Class
+
+---@Configuration--------Class level
+Neu ta muon define ra 1 class Application config class
+thi ta su dung @Configuration de cho spring load truoc.
+---@Bean--------Method level
+Dat ngay tren dau nhung phuong thuc cua class ma chung khai bao trong application config
+
